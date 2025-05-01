@@ -527,6 +527,7 @@ ol {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  gap: 8px;
 }
 
 .advant-list {
@@ -538,7 +539,8 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  max-width: 288px;
+  max-width: 356px;
+  margin-bottom: 72px;
 }
 
 .div-icons-advant {
@@ -548,10 +550,9 @@ ol {
   border-radius: 4px;
   margin-bottom: 8px;
   border: 1px solid #8e8f99;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
-  visibility: hidden;
 }
 .strategy {
   font-weight: 700;
@@ -568,5 +569,53 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .advent-div {
+    padding: 0;
+  }
+  .advant-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 736px;
+  }
+  .advant-l {
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .advent-div {
+    width: 1128px;
+    margin: 0 auto;
+    padding: 0 15px;
+    align-items: center;
+  }
+  .strategy {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .strategy .advant {
+    max-width: 1128px;
+  }
+
+  .advant-list {
+    flex-wrap: nowrap;
+    display: flex;
+    gap: 24px;
+    max-width: 1128px;
+  }
+
+  .div-icons-advant {
+    display: flex;
+  }
+
+  .advant-l {
+    width: calc((100% - 72px) / 4);
+    margin-bottom: 8px;
+    max-width: 264px;
+  }
 }
