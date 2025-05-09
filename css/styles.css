@@ -418,25 +418,25 @@ ol {
   display: block;
   max-width: 320px;
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding: 72px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/dark-bg-tel1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
 }
 
-@media (min-resolution: 192dpi) {
+@media (min-resolution: 2x) {
   .box {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office1.png);
+      url(../images/dark-bg-tel2x.jpg);
   }
 }
 
@@ -481,6 +481,22 @@ ol {
 @media screen and (min-width: 768px) {
   .main-section {
     max-width: 768px;
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg-tabl1x.jpg);
+  }
+
+  @media (min-resolution: 2x) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dark-bg-tabl2x.jpg);
+    }
   }
 
   .main-section-h {
@@ -493,8 +509,23 @@ ol {
 @media screen and (min-width: 1158px) {
   .main-section {
     max-width: 1440px;
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg-deckt1x.jpg);
   }
 
+  @media (min-resolution: 2x) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dark-bg-deckt2x.jpg);
+    }
+  }
   .main-section-h {
     margin-bottom: 48px;
   }
@@ -508,7 +539,7 @@ ol {
   color: #2e2f42;
   display: flex;
   gap: 24px;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .advant-h {
@@ -542,6 +573,9 @@ ol {
   max-width: 356px;
   margin-bottom: 72px;
 }
+.advant-l:nth-child(4) {
+  margin-bottom: 0;
+}
 
 .div-icons-advant {
   width: 264px;
@@ -561,6 +595,7 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .strategy-p {
@@ -584,9 +619,15 @@ ol {
     width: calc((100% - 24px) / 2);
     gap: 24px;
   }
+  .strategy {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1158px) {
+  .advant {
+    padding: 120px 0;
+  }
   .advent-div {
     width: 1128px;
     margin: 0 auto;
@@ -625,7 +666,7 @@ ol {
 
 .ourteam {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-info {
@@ -656,12 +697,17 @@ ol {
 }
 
 .ourteam-list-test {
+  max-width: 264px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  margin-bottom: 72px;
 }
 
+.ourteam-list-test:nth-child(4) {
+  margin-bottom: 0;
+}
 .foto-team {
   margin: 0 auto;
 }
@@ -720,9 +766,16 @@ ol {
   .ourteam-list-test {
     width: calc((100% - 24px) / 2);
   }
+
+  .ourteam-list-test:nth-child(4) {
+    margin-bottom: 72px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
+  .ourteam {
+    padding: 120px 0;
+  }
   .ourteam-list-test {
     width: calc((100% - 24px * 4) / 4);
   }
