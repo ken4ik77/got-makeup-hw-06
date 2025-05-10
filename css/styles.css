@@ -364,6 +364,7 @@ ol {
   justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
+  font-style: normal;
 }
 
 .address-menu-list {
@@ -377,7 +378,9 @@ ol {
   color: #434455;
   text-decoration: none;
 }
-
+.tel-menu {
+  color: #4d5ae5;
+}
 .menu-list-icon {
   display: flex;
   align-items: flex-start;
