@@ -690,8 +690,6 @@ ol {
   gap: 72px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
 }
 
 .ourteam-list-test {
@@ -727,7 +725,6 @@ ol {
 .our-list-icon {
   gap: 24px;
   display: flex;
-  justify-content: center;
 }
 
 .list-icon {
@@ -917,7 +914,6 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 264px;
 }
 
 .social {
@@ -1043,7 +1039,7 @@ ol {
 
 @media screen and (min-width: 1158px) {
   .con-footer {
-    max-width: 1128px;
+    max-width: 1158px;
     flex-wrap: nowrap;
     margin: 0 auto;
     gap: unset;
@@ -1092,7 +1088,7 @@ ol {
   left: 50%;
 
   border-radius: 4px;
-  width: 320px;
+  width: 288px;
   min-height: 584px;
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
